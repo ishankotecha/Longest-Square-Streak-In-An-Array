@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -6,10 +7,10 @@ import java.util.Set;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
-
+        int[] array = {4,2,16};
+        System.out.println(longestSquareStreak(array));
     }
-    public int longestSquareStreak(int[] nums) {
+    public static int longestSquareStreak(int[] nums) {
         Arrays.sort(nums);
         Set<Integer> set = new HashSet<>();
         for(int num : nums)
